@@ -59,11 +59,11 @@
 
 #subheading {
     font-size: 1.5em;
-    margin-bottom: 6.0vw;
+    margin-bottom: 6.0vh;
 }
 
 #register {
-    margin-bottom: 5vw;
+    margin-bottom: 7vh;
 }
 
 #trust-badge {
@@ -74,12 +74,33 @@
     width: 7%;
 }
 
+#newline {
+    display: none;
+}
 @media (max-width: 700px) {
     #trust-badge {
         width: 17%;
     }
     #title {
         font-size: 3em;
+    }
+    #faq {
+        margin-left: 1em;
+        margin-right: 0.25em;
+    }
+    #about {
+        margin-left: 1em;
+        margin-right: 0.25em;
+    }
+    #sponsors {
+        margin-left: 1em;
+        margin-right: 1em;   
+    }
+    #newline {
+        display:contents;
+    }
+    #divider {
+        display: none;
     }
 }
 
@@ -116,4 +137,5 @@ h2 {
 
 .card {
     text-align: center;
+    margin-bottom: 2.5em;
 }
