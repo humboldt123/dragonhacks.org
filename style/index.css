@@ -1,0 +1,119 @@
+:root {
+    --building: #02151c;
+    --building-back: #202d40;
+    --sky: #ffbfa5;
+}
+
+#splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50em;
+
+    background-size: cover;
+    image-rendering: pixelated;
+    background-position: bottom;
+    background-image: url('/assets/city/full.png');
+}
+
+#info {
+    background-image: linear-gradient(to bottom, var(--building), var(--building-back), #cd90b9);
+    color: var(--light);
+    font-size: x-large;
+}
+
+#sky {
+    background-size: cover;
+    image-rendering: pixelated;
+    background-position: top;
+    background-image: url('/assets/city/background.png');
+    color: var(--light);
+}
+
+#footer {
+    background-image: linear-gradient(to bottom, var(--sky), var(--sky));
+    color: var(--light);
+    font-size: x-large;
+}
+
+
+#title {
+    font-size: 5em;
+    margin: 0;
+}
+
+#hacks {
+    color: var(--orange);
+}
+
+#hacks:hover {
+    cursor: pointer;
+    animation: flash 0.5s infinite;
+}
+
+@keyframes flash {
+    0% { color: var(--orange); }
+    25% { color: var(--light); }
+}
+
+#subheading {
+    font-size: 1.5em;
+    margin-bottom: 6.0vw;
+}
+
+#register {
+    margin-bottom: 5vw;
+}
+
+#trust-badge {
+    display:block;
+    position:absolute;
+    left:5vw;
+    top:0;
+    width: 7%;
+}
+
+@media (max-width: 700px) {
+    #trust-badge {
+        width: 17%;
+    }
+    #title {
+        font-size: 3em;
+    }
+}
+
+
+
+
+h2 {
+    font-size: 2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    transition: color 0.1s ease-out, transform 0.05s ease-out;
+}
+
+
+.button:hover {
+    color: var(--orange);
+    transform: scale(1.05);
+}
+
+.button:hover:before,
+.button:hover:after {
+    animation-duration: 3s;
+    animation-delay: 0;
+}
+
+.card {
+    text-align: center;
+}

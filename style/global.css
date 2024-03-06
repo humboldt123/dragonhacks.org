@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    --dark: #212121;
+    --darker: #121212;
+    --superdark: #0a0a0a;
+    --almond: #ffebcd;
+    --light: #fefefe;
+    --superlight: #ffffff;
+    --red: #e83b3b;
+    --darkred: #ae2334;
+    --orange: #f8a435;
+    --offwhite: #c7dcd0;
+    --magenta: #a884f3;
+    --indigo: #3e01fc;
+    --darkpurple: #2e222f;
+    --superdarkpurple: #251c26;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "VT323", monospace;
+    background-color: var(--darker);
+    color: var(--light);
+}
+
+code {
+    font-family: 'Jetbrains Mono', monospace;
+}
+
+details {
+    padding: 0.5rem;
+    margin: 1em 1em 1em 0;
+    display: block;
+    transition: background-color 0.1s ease-in-out;
+  }
+
+
+details summary {
+    font-size: 130%;
+    cursor: pointer;
+    user-select: none;
+    transition: margin 70ms ease-in-out;
+}
+  
+a {
+    color: var(--red);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--darkred);
+    text-decoration: underline;
+}
+
+  
+.screen {
+    overflow: hidden;
+    min-height: 45em;
+}
+
+.darken {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
+
