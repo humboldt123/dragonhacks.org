@@ -139,3 +139,7 @@ h2 {
     text-align: center;
     margin-bottom: 2.5em;
 }
+
+.round {
+    border-radius: 5rem;
+}
