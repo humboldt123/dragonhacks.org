@@ -143,3 +143,42 @@ h2 {
 .round {
     border-radius: 5rem;
 }
+
+.schedule-section {
+    padding: 2rem 0;
+    background-color: #fff; /* Adjust if your site has a different color scheme */
+    color: #333; /* This should match your website's font color */
+}
+
+.schedule-section h2 {
+    font-size: 2rem;
+    color: #e83b3b; /* This matches the theme color you've set */
+}
+
+.schedule-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.schedule-list {
+    list-style: none;
+    padding: 0;
+}
+
+.schedule-list li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.schedule-list i {
+    margin-right: 10px;
+    color: #e83b3b; /* Theme color for icons */
+}
+
+@media (max-width: 768px) {
+    .schedule-day {
+        padding: 0 2rem; /* Adds padding on smaller screens */
+    }
+}
